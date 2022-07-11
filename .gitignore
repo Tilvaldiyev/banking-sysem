@@ -3,3 +3,5 @@
 steps.txt
 
 .env
+
+app.env
