@@ -1,9 +1,9 @@
 package sqlc
 
 import (
-	"banking-system/util"
 	"context"
 	"database/sql"
+	"github.com/Tilvaldiyev/banking-system/util"
 	"github.com/stretchr/testify/require"
 	"testing"
 	"time"
@@ -11,8 +11,8 @@ import (
 
 func createRandomAccount(t *testing.T) Account {
 	arg := CreateAccountParams{
-		Owner: util.RandomOwner(),
-		Balance: util.RandomMoney(),
+		Owner:    util.RandomOwner(),
+		Balance:  util.RandomMoney(),
 		Currency: util.RandomCurrency(),
 	}
 
@@ -47,9 +47,9 @@ func TestGetAccount(t *testing.T) {
 	require.WithinDuration(t, account1.CreatedAt, account2.CreatedAt, time.Second)
 }
 
-func TestUpdateAccount(t *testing.T)  {
+func TestUpdateAccount(t *testing.T) {
 	account1 := createRandomAccount(t)
-	
+
 	arg := UpdateAccountParams{
 		ID:      account1.ID,
 		Balance: util.RandomMoney(),

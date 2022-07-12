@@ -1,7 +1,7 @@
 package api
 
 import (
-	"banking-system/db/sqlc"
+	"github.com/Tilvaldiyev/banking-system/db/sqlc"
 	"github.com/gin-gonic/gin"
 )
 

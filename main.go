@@ -1,10 +1,11 @@
 package main
 
 import (
-	"banking-system/api"
-	"banking-system/db/sqlc"
-	"banking-system/util"
 	"database/sql"
+	"github.com/Tilvaldiyev/banking-system/api"
+	"github.com/Tilvaldiyev/banking-system/db/sqlc"
+	"github.com/Tilvaldiyev/banking-system/util"
+	_ "github.com/golang/mock/mockgen/model"
 	_ "github.com/lib/pq"
 	"log"
 )

@@ -1,8 +1,8 @@
 package api
 
 import (
-	"banking-system/db/sqlc"
 	"database/sql"
+	"github.com/Tilvaldiyev/banking-system/db/sqlc"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
@@ -58,7 +58,7 @@ func (server *Server) getAccount(ctx *gin.Context) {
 }
 
 type listAccountRequest struct {
-	PageID int32 `form:"page_id" binding:"required,min=1"`
+	PageID   int32 `form:"page_id" binding:"required,min=1"`
 	PageSize int32 `form:"page_size" binding:"required,min=5,max=10"`
 }
 

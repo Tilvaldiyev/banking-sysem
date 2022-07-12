@@ -1,8 +1,8 @@
 package sqlc
 
 import (
-	"banking-system/util"
 	"database/sql"
+	"github.com/Tilvaldiyev/banking-system/util"
 	"log"
 	"os"
 	"testing"
